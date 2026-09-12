@@ -1,0 +1,6 @@
+{
+  "name": "EduMoodle - Plateforme de Formation & Certification",
+  "description": "Plateforme d'apprentissage en ligne style Moodle avec cours vidéos YouTube organisés par thématiques et chapitres, quiz de validation, déblocage progressif, suivi de progression et délivrance de diplôme.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

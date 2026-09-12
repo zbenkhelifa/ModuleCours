@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+  }
+}
+
+.font-serif-diploma {
+  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-diploma,
+  #printable-diploma * {
+    visibility: visible;
+  }
+  #printable-diploma {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 20mm;
+    box-shadow: none !important;
+    border: none !important;
+    background: white !important;
+    z-index: 999999;
+  }
+  @page {
+    size: landscape;
+    margin: 0;
+  }
+}
